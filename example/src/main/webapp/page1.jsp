@@ -11,7 +11,8 @@
 <body>
     テキストを入力:
     <s:form method="post" action="action1.action">  <!-- httpメソッドとアクションを指定 -->
-      <s:label label="Message" key="text1" /><br />
+      <!-- <s:〇〇>というStruts2のカスタムタグで用意されたもののvalueは、フォーム送信時、アクションクラスに用意されたkey名のフィールドにアクセサを通じて保管される -->
+      <s:label label="Message" key="text1" /><br />   
       <s:textfield label="Field" key="field1" /><br />
       <s:submit value="submit" />
     </s:form>
