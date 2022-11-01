@@ -8,6 +8,7 @@
     <package name = "Hello.example" extends = "struts-default">
       <action name = "HelloStrutsAction" class = "Hello.example.HelloStrutsAction" method = "execute">
         <result name = "success">hello.jsp</result>
+        <result name = "test">test.jsp</result>
       </action>
     </package>
   </struts>
