@@ -9,6 +9,35 @@
       <action name = "HelloStrutsAction" class = "Hello.example.HelloStrutsAction" method = "execute">
         <result name = "success">hello.jsp</result>
       </action>
-
     </package>
   </struts>
+
+
+  <!-- 
+  
+  <package>タグ
+  パッケージを指定
+  name ... 名前
+  namespace ... 適用されるurl
+  extends ... リクエスト処理（今回の場合は標準的なリクエスト処理） 
+  
+  -->
+
+  <!-- 
+  
+  <action>タグ
+  アクションに関わる設定を行う。
+  name ... 名前
+  class ... アクションによって呼びだされるクラス
+  今回の場合は"action1"というアクションでは"Page1Bean"クラスが呼びだされ、そこにフォームの値が保管されたり、アクション時のexcuteが実行されたりする。 
+  
+  -->
+
+  <!-- 
+  
+  <result>タグ
+  アクションの返り値とページのurlを関連付ける
+  今回の場合は"page1"というテキストが返却されたら/page1.jspが表示されるようになる。
+  状況に応じて複数のいどうさきがある場合は、この<result>タグを複数用意して、必要に応じて返す値を変更する。 
+  
+  -->
