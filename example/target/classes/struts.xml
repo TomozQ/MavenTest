@@ -10,11 +10,6 @@
         <result name = "success">hello.jsp</result>
       </action>
     </package>
-    <package name="struts2sample" namespace="/" extends="struts-default" >
-      <action name="action1" class="tuyano.framework.Page1Bean" >
-        <reuslt name="page1">/page1.jsp</result>
-      </action>
-    </package>
   </struts>
 
 
